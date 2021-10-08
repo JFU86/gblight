@@ -1,0 +1,28 @@
+<?php
+/*
+	Guestbook Light
+	by Scripthosting.net
+	
+	Licensed under the "GPL Version 3, 29 June 2007"
+	http://www.gnu.org/licenses/gpl.html
+	
+	Support-Forum: http://board.scripthosting.net
+	Don't send emails asking for support!!
+*/
+
+// Laden der globalen PHP-Einstellungen: Nicht verändern!
+require_once("phpconfig.inc.php");
+
+##########################################
+$config = Array();
+// Individualisierung
+$config["defaultTemplate"] = "default";
+$config["timeFormat"] = "{timeformat}";
+$config["defaultLanguage"] = "{language}";
+$config["databaseType"] = "{databaseType}"; // Die verwendete Datenbank
+$config["debug"] = false;
+##########################################
+
+// Laden der lokalen Programmsettings: Nicht verändern!
+require_once("pathconfig.inc.php");
+?>
