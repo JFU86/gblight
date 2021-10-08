@@ -1,0 +1,31 @@
+<div id="sitecontent" style="text-align:center">
+	<h1>{@Benutzerverwaltung}</h1>
+	<table class="table">
+		<tr>
+			<th colspan="2">{@Benutzer}</th>
+		</tr>
+		{userlist}
+	</table>
+	<br />
+	<form action="./?action=usercontrol&amp;noheader=true" method="post">
+		<table class="table">
+			<tr>
+				<th colspan="2">{@Benutzer hinzufügen}</th>
+			</tr>
+			<tr>
+				<td class="td0" style="width:140px;">{@Administrator Name}</td>
+				<td class="td0"><input type="text" name="username" style="width:250px;" autocomplete="off" /></td>
+			</tr>
+			<tr>
+				<td class="td1" style="width:140px;">{@Administrator Passwort}</td>
+				<td class="td1"><input type="password" name="password" style="width:250px;" autocomplete="off" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input name="newuser" type="submit" value="{@Benutzer hinzufügen}" /></td>
+			</tr>
+		</table>
+	</form>			
+</div>
+
+<!-- Menü einfärben -->
+<script> highlightNav('mnuUsercontrol'); </script>

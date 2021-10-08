@@ -1,0 +1,44 @@
+<div id="sitecontent">
+	<form action="./?action=settings" method="post">
+	<input type="hidden" name="noheader" value="true" />
+	<table style="margin: 0px auto; width: 442px;">
+		<tr>
+			<th>{@Einstellung}</th>
+			<th>{@Status}</th>
+		</tr>
+		<tr class="tr2">
+			<td colspan="2"><img src="../templates/{templateName}/img/b_tipp.png" alt="info" /> <b>{@Anpassen der Gästebuch Einstellungen}</b></td>
+		</tr>
+		<tr class="tr1">
+			<td><b>{@Gästebuch aktivieren}</b><br />{@Aktiviert das Gästebuch und lässt neue Einträge zu}.</td>
+			<td><input type="checkbox" name="chkGbActive" value="1" {chkGbActiveChecked}/></td>
+		</tr>		
+		<tr class="tr2">
+			<td><b>{@Sicherheitscode aktivieren}</b><br />{@Gäste müssen einen Sicherheitscode eingeben, um einen Eintrag absenden zu können}.</td>
+			<td><input type="checkbox" name="chkCaptchaActive" value="1" {chkCaptchaActiveChecked}/></td>
+		</tr>		
+		<tr class="tr1">
+			<td><b>{@Beiträge automatisch freischalten}</b><br />{@Beiträge werden automatisch freigeschaltet und müssen nicht zunächst vom Administrator freigeschaltet werden, bevor Sie im Gästebuch sichtbar sind}.</td>
+			<td><input type="checkbox" name="chkAutoActive" value="1" {chkAutoActiveChecked}/></td>
+		</tr>
+		<tr class="tr2">
+			<td><b>{@Richtext Editor aktivieren}</b><br />{@Texte können mithilfe des Editors formatiert werden}.</td>
+			<td><input type="checkbox" name="chkTexteditorActive" value="1" {chkTexteditorActiveChecked}/></td>
+		</tr>
+		<tr class="tr1">
+			<td><b>{@Einträge pro Seite}</b><br />{@Auf einer Seite werden maximal so viele Einträge angezeigt}.</td>
+			<td><input type="text" name="entriesPerPage" value="{entriesPerPage}" style="width:35px;" /></td>
+		</tr>
+		<tr class="tr2">
+			<td><b>{@Maximale Textlänge pro Beitrag}</b><br />{@Limitiert die Beiträge auf eine bestimmte Textlänge}.</td>
+			<td><input type="text" name="maxTextLength" value="{maxTextLength}" style="width:35px;" /></td>
+		</tr>
+		<tr class="tr2">
+			<td colspan="2"><input name="submit" type="submit" value="{@Einstellungen speichern}" /></td>
+		</tr>	
+	</table>
+	</form>
+</div>
+
+<!-- Menü einfärben -->
+<script type="text/javascript"> highlightNav('mnuSettings'); </script>

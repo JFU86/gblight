@@ -1,0 +1,244 @@
+@CHARSET "UTF-8";
+
+/**********************
+ * Common HTML Elements
+ **********************/
+
+html, body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #111111;
+	background-color: #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a:link, a:active, a:visited {
+	color: #111111;
+	text-decoration: none;	
+}
+
+a:hover {
+	background-color: #E6E6E6;	
+}
+
+hr {	
+	color: #D7D7D7;
+	background-color: #D7D7D7;
+	height: 1px;
+	border: 0;
+}
+
+th {
+	border: 1px solid #9A9A9A;
+	padding: 5px;
+	background-color: #CDCDCD;
+	font-size: 14px;
+	background-image: url('../img/thbg.png');
+	background-repeat: repeat-x;
+}
+
+td {
+	border: 1px solid #9A9A9A;
+	padding: 5px;
+}
+
+td:hover {
+	background-color: #E6E6E6;
+}
+
+input, select, textarea {
+	border: 1px solid #B3ABB2;
+	padding: 1px;
+	margin: 1px;
+	background-color: #FFFFFF;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: #EFEFEF;
+	border: 1px solid #008000; 
+}
+
+input[disabled] {
+	border: 1px solid #B3ABB2;
+	background-color: #FFD3D3;
+}
+
+input[type="button"], input[type="submit"] {
+	padding: 2px 5px 2px 5px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url('../img/footerbg.png'); 
+}
+
+input[type="checkbox"], input[type="radio"]{
+	border: 0;
+	background-color: transparent;
+}
+
+/* Remove input padding in FF */
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	border: 0px;
+	max-width: 256px;
+	max-height: 64px;
+}
+
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+
+
+/**********************
+ * Custom HTML Elements
+ **********************/
+
+div#overall_content {
+	margin: 0px auto;
+	width: 100%;
+	overflow: hidden;
+	max-width: 800px;
+	background-color: #EFEFEF;
+}
+
+div#gfxheader {
+	border-bottom: 1px solid #9A9A9A;
+	padding: 0px;
+	background-color: #DEDEDE;
+	font-size: 24px;
+	height: 80px;
+	background-image: url('../img/gblight_gfxheader.png');
+	line-height: 20px;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+div#gfxheader:hover {
+	cursor: pointer;
+}
+
+/* the whole content within a site */
+div#sitecontent {
+	min-height: 320px;
+}
+
+/* the menu bar */
+div#menu {
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #9A9A9A;
+	font-size: 14px;
+}
+
+/* style of a menu item */
+span.menu_item {
+	
+}
+	
+td.menu_item {
+	text-align: center;
+	border: 0;
+	border-left: 1px solid #9A9A9A;
+	border-right: 1px solid #9A9A9A;
+}
+
+/* style of focused menu item */
+td.menu_item:hover{
+	background-color: #E6E6E6;
+	cursor:pointer;
+}
+
+/* the info box */
+div.info {
+	padding: 5px;
+	width: 430px;
+	margin: auto;
+	background-color: #FFFFFF;
+	border: 1px solid #9A9A9A;
+	font-size: 12px;
+	text-align: justify;
+}
+
+/* the error message box */
+div.errorbox {
+	padding: 5px;
+	width: 430px;
+	margin: auto;
+	background-color: #FFDFDF;
+	border: 1px solid #9A9A9A;
+	font-size: 12px;
+	text-align: justify;
+}
+
+div#pages {
+	text-align: center;
+	padding: 5px;
+	background-color: #FFFFFF;
+	background-image: url('../img/footerbg.png'); 
+	background-repeat: repeat-x;
+	max-height: 60px;
+	overflow: auto;
+}
+
+tr.tr1 {
+	background-color: #EEEEEE;
+}
+
+tr.tr2 {
+	background-color: #FEFEFE;
+}
+
+tr#trCaptcha {
+
+}
+
+td.entry {
+	padding: 5px 5px 10px 5px;
+	border-left: 0;
+	border-right: 0;
+}
+
+td.noentry {
+	padding: 10px 5px 10px 5px;
+	border-left: 0;
+	border-right: 0;
+}
+
+td.login {
+	 background-color: #FFFFFF;	
+}
+
+/* the installation window */
+div.install {
+	padding: 5px;
+	width: 430px;
+	margin: auto;
+	font-size: 12px;
+	text-align: justify;
+}
+
+div#foot {
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 11px; 
+	border-top: 1px solid #9A9A9A;
+	text-align: right; 
+	padding: 5px; 
+	background-color: #FFFFFF;
+	background-image: url('../img/footerbg.png'); 
+	background-repeat: repeat-x;
+}

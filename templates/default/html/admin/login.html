@@ -1,0 +1,32 @@
+<div style="text-align:center;margin:10px;">
+	<h1>{@Gästebuch Zugang}</h1>
+</div>
+
+<form action="./" method="post">
+<div class="install">
+	<table style="margin:0px auto;width:100%;">
+		<tr>
+			<td class="login">{@Administrator Name}:</td>
+			<td class="login"><input type="text" name="name" style="width:200px;" /></td>
+		</tr>
+		<tr>
+			<td class="login">{@Administrator Passwort}:</td>
+			<td class="login"><input type="password" name="pass0" style="width:200px;" /></td>
+		</tr>
+		<tr>
+			<td class="login" colspan="2" style="text-align:right;"><input id="submit" name="submit" type="submit" value="{@anmelden}" disabled="disabled" /></td>
+		</tr>
+	</table>
+</div>
+</form>
+
+<div id="window-javascript">
+	<div class="errorbox" style="width:98%;">
+		<img src="../templates/{templateName}/img/s_error.png" alt="Wichtig" /> <b>{@Fehler}:</b> {@In Ihrem Browser ist JavaScript deaktiviert. Arlight ist somit nicht voll funktionsfähig.}<br />{@Bitte aktivieren Sie JavaScript dauerhaft für diese Seite und versuchen es erneut.}
+	</div>
+</div>
+
+<script>
+	document.getElementById("submit").disabled=false; 
+	document.getElementById("window-javascript").style.visibility='hidden'; 
+</script>

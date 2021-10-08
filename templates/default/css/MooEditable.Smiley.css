@@ -1,0 +1,13 @@
+.mooeditable-ui-toolbar .smiley-item .button-icon {
+	background: transparent url('../../global/img/smile.png') no-repeat top left;
+}
+
+.smiley-overlay{
+	line-height: 1em;
+	background-color: #EFEFEF;
+}
+
+.smiley-overlay .smiley-image{
+	margin: 2px;
+	cursor: pointer;
+}

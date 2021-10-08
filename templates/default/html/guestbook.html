@@ -1,0 +1,39 @@
+<form action="index.php" method="post">
+<input type="hidden" name="noheader" value="true" />
+<table style="width:100%;">
+	<tr>
+		<th style="border-top:0;border-left:0;border-right:0;">{@Beiträge}</th>
+	</tr>
+	{guestbook}	
+</table>
+
+<div id="pages"><b>{@Seite}:</b> {pages}</div>
+
+<table style="width:100%;">		
+	<tr>
+		<th colspan="2" style="border-left:0;border-right:0;">{@Eintrag hinzufügen}</th>
+	</tr>
+	
+	<tr class="tr1">
+		<td style="border-left:0; width:100px;"><b>{@Name}:</b></td>
+		<td style="border-right:0;"><input type="text" name="name" value="{name}" style="width:99%;" /></td>
+	</tr>
+	<tr class="tr2">
+		<td style="border-left:0;"><i>{@E-Mail}:</i></td>
+		<td style="border-right:0;"><input type="email" name="email" value="{email}" style="width:99%;" /></td>
+	</tr>
+	<tr class="tr1">
+		<td style="border-left:0;"><b>{@Text}:</b></td>
+		<td style="border-right:0;">
+			<textarea id="text" name="text" rows="1" cols="1" style="width:98%;height:100px;">{text}</textarea>
+		</td>
+	</tr>
+	{catpcha}
+	<tr class="tr1">
+		<td style="border-left:0;border-right:0;" colspan="2"><input type="checkbox" name="accept_agreement" value="1" /> <a href="terms.php" target="_blank">&nbsp;&nbsp;{@Ich habe die <b>Nutzungsbedingungen</b> gelesen und akzeptiert}</a>.</td>
+	</tr>
+	<tr class="tr2">
+		<td style="border-left:0; border-right:0; border-bottom:0;" colspan="2"><input type="submit" name="submit" value="{@Eintrag absenden}" />&nbsp;&nbsp;&nbsp;<span id="error" style="color:red;">{fehler}</span></td>
+	</tr>
+</table>
+</form>
