@@ -15,4 +15,4 @@ Systemanforderung:
 PHP Version: 5.3.3 bis 7.3.x (mit installiertem GD)
 Datenbank: SQLite 3.6+
 
-Lizenz GPLv3 
+Lizenz GPLv3
